@@ -1,0 +1,116 @@
+.searchbar-bg{
+    background-color: rgb(51, 103, 214);
+    display: flex;
+    height: 56px;
+}
+
+.leftContent{
+    flex: 1 1;
+    -webkit-margin-start: 6px;
+    align-items: center;
+    display: flex;
+}
+
+h1{
+    -webkit-margin-start: 6px;
+    -webkit-padding-end: 12px;
+    flex: 1;
+    margin: inherit;
+    font-size: 123%;
+    font-weight: 400;
+    overflow: hidden;
+    color: white;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.normal-search{
+    align-items: center;
+    display: flex;
+    width: 100%
+}
+
+.centerContent{
+    flex: 1 1;
+    justify-content: center;
+    display: flex;
+}
+
+.search-content-input{
+    flex: 1;
+    -webkit-appearance: none;
+    background: transparent;
+    border: none;
+    color: white;
+    font: inherit;
+    outline: none;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+.rightContent{
+    flex: 1 1;
+}
+
+.input-group-addon{
+    font-size: 16px
+}
+
+.input-group{
+    background: rgba(0, 0, 0, 0.22);
+    border-radius: 2px;
+    cursor: text
+}
+.search-icon{
+    background: none;
+    border: none;
+}
+
+.glyphicon-remove-circle{
+    background: none;
+    border: none;
+    color: whitesmoke;
+}
+
+.form-control:focus{
+    box-shadow: none;
+}
+
+.glyphicon-search{
+    color: whitesmoke;
+}
+
+.glyphicon-search:active{
+    color: white;
+}
+
+.form-control{
+    -webkit-appearance: none;
+    background: transparent;
+    border: none;
+    color: white;
+    font: inherit;
+    outline: none;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+label{
+    margin-bottom: 0px;
+}
+
+.glyphicon-loading{
+    width: 20px;
+    height: 20px;
+    border: 1px solid ghostwhite;
+    border-top: none;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+    0%{transform: rotate(0deg);}
+    100%{transform:rotate(359deg);}
+}

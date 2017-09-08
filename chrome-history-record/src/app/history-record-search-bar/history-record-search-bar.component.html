@@ -1,0 +1,28 @@
+<div class="searchbar-bg">
+  <div *ngIf='noselectItem;else editSearch' class="normal-search">
+    <div class="leftContent">
+      <h1>{{searchBarViewModel.searchTitle}}</h1>
+    </div>
+    <div class="centerContent">
+      <div class="input-group">
+        <span class="input-group-addon search-icon">
+            <label *ngIf="noSearchingProcess;else searchloading" class="glyphicon glyphicon-search" for="email" rel="tooltip" title="search history"></label>
+            <ng-template #searchloading>
+                <label class="glyphicon glyphicon-loading"  rel="tooltip"></label>
+              </ng-template>
+        </span>
+        <input class="form-control" [(ngModel)]="searchBarViewModel.searchName" #searchNameInput name="searchName" (keyup)="searchInput(searchNameInput.value)"
+          placeholder="search history record" type="text">
+        <span *ngIf="searchClearBtnShow" class="input-group-addon search-icon">
+            <button class="glyphicon glyphicon-remove-circle" title="clear search input" (click)="clearInputSearch()"></button>
+        </span>
+      </div>
+    </div>
+    <div class="rightContent">
+    </div>
+  </div>
+  <ng-template #editSearch>
+    <div class="edit-search">
+    </div>
+  </ng-template>
+</div>
