@@ -1,0 +1,15 @@
+.icon-website{
+    background-repeat: round;
+    padding: 0px;
+    height: 16px;
+    width: 16px;
+}
+
+.website{
+    display: flex;
+}
+
+.website-name{
+    max-width: 70%;
+    text-overflow: ellipsis
+}

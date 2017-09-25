@@ -1,0 +1,18 @@
+<div class="row">
+  <input class="col-md-1" type="checkbox">
+  <span class="col-md-2">{{model.date}}</span>
+  <div class="col-md-8 website-info">
+    <div class="col-md-2 icon-website" [ngStyle]="{'background-image':'url('+model.website.icon+')' }"></div>
+    <div class="website col-md-7">
+      <a [href]="model.website.website" class="website-name">
+        {{model.website.name}}
+      </a>
+      <div class="website-domain">
+          {{model.website.domain}}
+      </div>
+    </div>
+  </div>
+  <div class="col-md-1 operate" (click)="operateRecord(model.website)">
+    <i class="fa fa-ellipsis-v"></i>
+  </div>
+</div>
