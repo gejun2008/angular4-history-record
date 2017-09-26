@@ -8,7 +8,7 @@ import {HistoryRecordSearchBar} from '../view-model/history-record-search.model'
 })
 export class HistoryRecordSearchBarComponent implements OnInit {
   searchBarViewModel:HistoryRecordSearchBar = {
-    searchTitle:"history record",
+    searchTitle:"历史记录",
     searchName:""
   };
 
