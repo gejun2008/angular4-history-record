@@ -20,4 +20,8 @@ export class HistoryRecordItemComponent implements OnInit {
   handleItemData(itemData){
     this.model = this.itemData;
   }
+
+  operateRecord(site){
+    window.open(site);
+  }
 }

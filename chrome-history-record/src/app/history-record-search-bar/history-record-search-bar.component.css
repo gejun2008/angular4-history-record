@@ -15,8 +15,9 @@ h1{
     -webkit-margin-start: 6px;
     -webkit-padding-end: 12px;
     flex: 1;
+    padding-left: 13px;
     margin: inherit;
-    font-size: 123%;
+    font-size: 1rem;
     font-weight: 400;
     overflow: hidden;
     color: white;

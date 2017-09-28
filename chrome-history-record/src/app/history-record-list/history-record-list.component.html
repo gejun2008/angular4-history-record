@@ -1,3 +1,8 @@
-<div *ngFor="let item of listItems">
-  <app-history-record-item [itemData]='item'></app-history-record-item>
+<div *ngFor="let item of listItems" class="list-layout">
+  <div class="card-item">
+    <div class="card-title">{{item.date}}</div>
+    <div class="card-item" *ngFor="let itemInfo of item.websites">
+      <app-history-record-item [itemData]='itemInfo'></app-history-record-item>
+    </div>
+  </div>
 </div>

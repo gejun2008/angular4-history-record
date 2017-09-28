@@ -2,7 +2,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { NgModule }             from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { MainHistoryRecordLayoutComponent } from './main-history-record-layout/main-history-record-layout.component';
 import { HistoryRecordSearchBarComponent } from './history-record-search-bar/history-record-search-bar.component';
 import { HistoryRecordListComponent } from './history-record-list/history-record-list.component';
 import { SyncedTabsComponent } from './synced-tabs/synced-tabs.component';
